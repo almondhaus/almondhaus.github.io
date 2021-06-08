@@ -1,0 +1,14 @@
+@import "./variables";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: $fontColor;
+
+  background-color: $backgroundColor;
+}
+
+@import "./header/header";
+@import "./main/main";
+@import "./section/section";

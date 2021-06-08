@@ -1,0 +1,6 @@
+$backgroundColor: #fff;
+$fontColor: rgb(83, 46, 20);
+$borderColor: lighten(
+  $color: $fontColor,
+  $amount: 20,
+);

@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #532e14;
+  background-color: #fff;
+}
+
+.ah-header {
+  width: 100%;
+  padding: 15px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ah-header .ah-h1 {
+  font-size: 20px;
+}
+
+.ah-header .ah-order {
+  font-size: 18px;
+  padding: 2.5px 15px;
+  border: 1px solid #a55c28;
+  border-radius: 0.25rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.ah-main {
+  position: relative;
+  height: calc(100vh - 61px);
+  background-color: transparent;
+  padding: 0 15px;
+}
+
+.ah-main .ah-main-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ah-main .ah-main-div .ah-h3 {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.ah-main .ah-main-div .ah-h4 {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  margin-bottom: 32.5px;
+}
+
+.ah-main .ah-main-div .ah-h4 .ah-h4-span-top {
+  color: #a55c28;
+}
+
+.ah-main .ah-main-div .ah-h4 .ah-h4-span-bottom {
+  color: #e1ab85;
+}
+
+.ah-main .ah-main-div .ah-main-input {
+  padding: 8px 15px;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 1px 1px 2px gray;
+          box-shadow: 1px 1px 2px gray;
+  color: #fff;
+  background-color: #ba672d;
+  font-size: 18px;
+}
+
+.ah-main .ah-main-div .ah-main-input:hover {
+  opacity: 1;
+}
+
+.ah-section {
+  height: 100vh;
+  position: relative;
+}
+
+/*
+** Section-About Style
+*/
+.ah-about {
+  background-color: wheat;
+}
+
+.ah-about .ah-about-div {
+  background-color: transparent;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.ah-about .ah-about-div .ah-about-h3 {
+  color: #a55c28;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.ah-about .ah-about-div .ah-about-p {
+  color: #915023;
+  font-size: 16px;
+  line-height: 2;
+}
+
+/*
+** Section-Category Style
+*/
+.ah-category .ah-category-div {
+  position: absolute;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ah-category .ah-category-div .ah-category-h3 {
+  color: #a55c28;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.ah-category .ah-category-div .ah-category-option {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  width: calc(100% - 30px);
+  margin: 10px auto;
+  height: 25%;
+  position: relative;
+  background-color: wheat;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.ah-category .ah-category-div .ah-category-option .ah-category-option-text {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #a55c28;
+  background-color: transparent;
+}
+
+.ah-ordering {
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+          clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  background-color: wheat;
+}
+
+.ah-ordering .ah-ordering-div {
+  position: absolute;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ah-ordering .ah-ordering-div .ah-ordering-h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.ah-ordering .ah-ordering-div .ah-ordering-option {
+  width: calc(100% - 30px);
+  height: 10%;
+  background-color: beige;
+  position: relative;
+  margin: 10px auto;
+}
+
+.ah-ordering .ah-ordering-div .ah-ordering-option .ah-ordering-option-text {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: black;
+}
+/*# sourceMappingURL=body.css.map */
