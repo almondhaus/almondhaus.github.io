@@ -1,6 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+// "Abel", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+// 'Amatic SC', cursive;
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+// 'M PLUS Rounded 1c', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
+// 'Exo', sans-serif;
+
 .ah-section {
   height: 100vh;
   position: relative;
+  background-color: $backgroundColor;
 }
 
 /*
@@ -13,8 +23,8 @@
   //     100% 100%,
   //     0 90%
   // );
-  background-color: wheat;
 
+  height: 50vh;
   .ah-about-div {
     background-color: transparent;
 
@@ -28,13 +38,15 @@
     transform: translate(-50%, -50%);
 
     .ah-about-h3 {
-      color: $borderColor;
-      font-size: 25px;
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      color: lighten($color: $fontColor, $amount: 40);
+      
+      font-size: 35px;
       margin-bottom: 20px;
     }
 
     .ah-about-p {
-      color: darken($color: $borderColor, $amount: 5);
+      color: lighten($color: $fontColor, $amount: 50);
       font-size: 16px;
       line-height: 2;
     }
@@ -51,11 +63,12 @@
   //     100% 90%,
   //     0 100%
   // );
-  // background-color:darken($color: $borderColor, $amount: 15);
-  height: 200vh;
+
+  height: 150vh;
   .ah-category-div {
+
     position: absolute;
-    height: 70%;
+    height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -64,20 +77,27 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     .ah-category-h3 {
-      color: $borderColor;
-      font-size: 25px;
-      margin-bottom: 20px;
+      height: 10%;
+      top: 2.5%;
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      color: lighten($color: $fontColor, $amount: 40);
+      font-size: 35px;
+      align-self: center;
+      position: relative;
+
     }
 
     .ah-category-option {
-      flex-basis: 25%;
-      width: calc(100% - 200px);
-      margin: 20px auto;
-      height: 100%;
+      align-self: center;
+      width: calc(100%);
+      flex-basis: 22.5%;
+      margin: 0 auto;
+      background-clip: content-box;
+      padding: 20px;
+
       opacity: 0.8;
 
       background-position: center;
@@ -86,18 +106,20 @@
 
       position: relative;
       background-color: transparent;
-      box-shadow: 2px 3px 5px rgba(119, 119, 119, 0.541);
+      box-shadow: 2px 1px 5px whitesmoke;
       transition: all 0.3s ease;
 
       .ah-category-option-text {
         display: inline-block;
-        font-size: 16px;
+        font-size: 26px;
+        font-family: 'Exo', sans-serif;
+        letter-spacing: 2px;
         position: absolute;
         font-weight: bold;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: #555;
+
         background-color: transparent;
         transition: all 0.1s ease;
       }
@@ -114,83 +136,107 @@
     }
 
     .smoothie {
-      margin-left: 50px;
+      // margin-left: 50px;
 
       background-image: linear-gradient(
           to bottom right,
-          rgba(245, 245, 220, 0.915),
-          rgba(245, 245, 220, 0.215)
+          rgba(194, 253, 167, 0.8),
+          rgba(230, 230, 219, 0.6)
         ),
         url("../images/smoothie.png");
+
+        .ah-category-option-text {
+          color: rgb(206, 253, 197);
+        }
     }
 
     .slush {
-      margin-right: 50px;
+      // margin-right: 50px;
 
       background-image: linear-gradient(
           to bottom right,
-          rgba(245, 245, 220, 0.915),
-          rgba(245, 245, 220, 0.215)
+          rgba(243, 166, 239, 0.8),
+          rgba(247, 213, 61, 0.6)
         ),
         url("../images/slush.png");
+        
+        .ah-category-option-text {
+          color: rgb(255, 217, 217);
+        }
     }
 
     .coffee {
-      margin-left: 50px;
+      // margin-left: 50px;
 
       background-image: linear-gradient(
           to bottom right,
-          rgba(245, 245, 220, 0.915),
-          rgba(245, 245, 220, 0.215)
+          rgba(136, 66, 8, 0.8),
+          rgba(233, 233, 224, 0.6)
         ),
         url("../images/coffee.png");
+        .ah-category-option-text {
+          color: rgb(228, 216, 182);
+        }
     }
 
     .tea {
-      margin-right: 50px;
+      // margin-right: 50px;
 
       background-image: linear-gradient(
           to bottom right,
-          rgba(245, 245, 220, 0.915),
-          rgba(245, 245, 220, 0.215)
+          rgba(228, 200, 41, 0.8),
+          rgba(245, 228, 205, 0.6)
         ),
         url("../images/tea.png");
+
+        .ah-category-option-text {
+          color: rgb(240, 237, 211);
+        }
     }
   }
 }
 
 .ah-ordering {
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-  background-color: transparent;
-  height: 150vh;
+
+
+  height: 120vh;
+
+
 
   .ah-ordering-div {
+    height: 100%;
     position: absolute;
-    height: 70%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     margin: 0 auto;
+    padding: 20px;
     text-align: center;
+    background-clip: content-box;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     .ah-ordering-h3 {
+      font-family: 'M PLUS Rounded 1c', sans-serif;
       font-size: 35px;
-      margin-bottom: 40px;
+      color: lighten($color: $fontColor, $amount: 40);
+      flex-basis: 12.5%;
       width: 100%;
+      height: 100%;
     }
 
     .ah-ordering-option {
-      flex-basis: 33%;
+      flex-basis: 25%;
       width: 100%;
+      height: 100%;
       position: relative;
       background-position: center;
-      background-size: cover;
+      background-size: 100%;
       background-repeat: no-repeat;
+
 
       .ah-ordering-option-text {
         display: inline-block;
@@ -205,6 +251,8 @@
 
     .direct-order {
       background-image: url("https://raster-static.postmates.com/?url=com.postmates.img.prod.s3.amazonaws.com%2F15390782-2588-46f5-bea8-b0b04c7458a9%2Forig.jpg&quality=85&w=1500&h=0&mode=auto&format=&v=4");
+      clear: both;
+      font-family: 'Amatic SC', cursive;
 
       .ah-ordering-option-text {
         display: inline-block;
@@ -216,7 +264,7 @@
         transform: translate(-50%, -50%);
         color: rgb(255, 255, 255);
         opacity: 1;
-        font-size: 30px;
+        font-size: 40px;
         font-weight: bolder;
         letter-spacing: 5px;
       }

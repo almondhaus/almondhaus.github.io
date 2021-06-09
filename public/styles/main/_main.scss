@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+// "Abel", sans-serif;
+
+
 .ah-main {
   position: relative;
   height: calc(100vh - 61px);
-  background-color: transparent;
+  background-color:lighten($color: $fontColor, $amount: 50);
   padding: 0 15px;
 
   .ah-main-div {
@@ -13,45 +17,64 @@
     width: 100%;
     padding: 0 10px;
     margin: 0 auto;
-
     text-align: center;
 
     .ah-h3 {
-      font-size: 30px;
+      font-size: 45px;
       letter-spacing: 2px;
+      font-family: "Abel", sans-serif;
+      color: white;
     }
 
     .ah-h4 {
+
       font-size: 20px;
-      letter-spacing: 1.5px;
+      letter-spacing: 5.5px;
       margin-bottom: 32.5px;
+      font-family: "Abel", sans-serif;
+      
+      
 
       .ah-h4-span-top {
-        color: lighten($color: $fontColor, $amount: 20);
+        color: whitesmoke;
       }
 
       .ah-h4-span-bottom {
-        color: lighten($color: $fontColor, $amount: 50);
+        color: whitesmoke;
       }
     }
 
-    .ah-main-input {
-      padding: 8px 15px;
-      border-radius: 0.25rem;
+    .ah-main-inner-div {
 
-      box-shadow: 1px 1px 2px gray;
-      // background-image: linear-gradient(
-      //     to bottom right,
-      //     rgba(223, 155, 77, 0.979),
-      //     rgb(122, 67, 27)
-      // );
-      color: $backgroundColor;
-      background-color: lighten($color: $borderColor, $amount: 5);
-      font-size: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      width: max-content;
+      margin: 0 auto;
+      padding: 5px 10px;
+      text-align: center;
+      border-bottom: 1px solid $backgroundColor;
+      .ah-main-input {
 
-      &:hover {
-        opacity: 1;
+        margin-right: 10px;
+        // background-image: linear-gradient(
+        //     to bottom right,
+        //     rgba(223, 155, 77, 0.979),
+        //     rgb(122, 67, 27)
+        // );
+        color: $backgroundColor;
+        background-color:transparent;
+        font-size: 18px;
+        font-weight: lighter;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      i {
+        display: inline-block;
+        color: white;   
       }
     }
   }
+
 }

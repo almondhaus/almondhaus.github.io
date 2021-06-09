@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
 body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
-  color: #532e14;
+  color: #aa7d5e;
   background-color: #fff;
 }
 
@@ -12,7 +18,7 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background-color: transparent;
+  background-color: #f0e9e4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,19 +28,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid #f0e9e4;
 }
 
 .ah-header .ah-h1 {
   font-size: 20px;
+  font-family: "Abel", sans-serif;
+  color: white;
 }
 
 .ah-header .ah-order {
   font-size: 18px;
   padding: 2.5px 15px;
-  color: #532e14;
+  color: white;
   font-weight: 400;
-  border: 2.5px solid #a55c28;
   border-radius: 0.25rem;
+  font-family: "Abel", sans-serif;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
@@ -42,7 +51,7 @@ body {
 .ah-main {
   position: relative;
   height: calc(100vh - 61px);
-  background-color: transparent;
+  background-color: white;
   padding: 0 15px;
 }
 
@@ -59,48 +68,74 @@ body {
 }
 
 .ah-main .ah-main-div .ah-h3 {
-  font-size: 30px;
+  font-size: 45px;
   letter-spacing: 2px;
+  font-family: "Abel", sans-serif;
+  color: white;
 }
 
 .ah-main .ah-main-div .ah-h4 {
   font-size: 20px;
-  letter-spacing: 1.5px;
+  letter-spacing: 5.5px;
   margin-bottom: 32.5px;
+  font-family: "Abel", sans-serif;
 }
 
 .ah-main .ah-main-div .ah-h4 .ah-h4-span-top {
-  color: #a55c28;
+  color: whitesmoke;
 }
 
 .ah-main .ah-main-div .ah-h4 .ah-h4-span-bottom {
-  color: #e1ab85;
+  color: whitesmoke;
 }
 
-.ah-main .ah-main-div .ah-main-input {
-  padding: 8px 15px;
-  border-radius: 0.25rem;
-  -webkit-box-shadow: 1px 1px 2px gray;
-          box-shadow: 1px 1px 2px gray;
+.ah-main .ah-main-div .ah-main-inner-div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  padding: 5px 10px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+
+.ah-main .ah-main-div .ah-main-inner-div .ah-main-input {
+  margin-right: 10px;
   color: #fff;
-  background-color: #ba672d;
+  background-color: transparent;
   font-size: 18px;
+  font-weight: lighter;
 }
 
-.ah-main .ah-main-div .ah-main-input:hover {
+.ah-main .ah-main-div .ah-main-inner-div .ah-main-input:hover {
   opacity: 1;
+}
+
+.ah-main .ah-main-div .ah-main-inner-div i {
+  display: inline-block;
+  color: white;
 }
 
 .ah-section {
   height: 100vh;
   position: relative;
+  background-color: #fff;
 }
 
 /*
 ** Section-About Style
 */
 .ah-about {
-  background-color: wheat;
+  height: 50vh;
 }
 
 .ah-about .ah-about-div {
@@ -117,13 +152,14 @@ body {
 }
 
 .ah-about .ah-about-div .ah-about-h3 {
-  color: #a55c28;
-  font-size: 25px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #f0e9e4;
+  font-size: 35px;
   margin-bottom: 20px;
 }
 
 .ah-about .ah-about-div .ah-about-p {
-  color: #915023;
+  color: white;
   font-size: 16px;
   line-height: 2;
 }
@@ -132,12 +168,12 @@ body {
 ** Section-Category Style
 */
 .ah-category {
-  height: 200vh;
+  height: 150vh;
 }
 
 .ah-category .ah-category-div {
   position: absolute;
-  height: 70%;
+  height: 100%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -152,48 +188,56 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .ah-category .ah-category-div .ah-category-h3 {
-  color: #a55c28;
-  font-size: 25px;
-  margin-bottom: 20px;
+  height: 10%;
+  top: 2.5%;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #f0e9e4;
+  font-size: 35px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
 }
 
 .ah-category .ah-category-div .ah-category-option {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
-  width: calc(100% - 200px);
-  margin: 20px auto;
-  height: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: calc(100%);
+  -ms-flex-preferred-size: 22.5%;
+      flex-basis: 22.5%;
+  margin: 0 auto;
+  background-clip: content-box;
+  padding: 20px;
   opacity: 0.8;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   background-color: transparent;
-  -webkit-box-shadow: 2px 3px 5px rgba(119, 119, 119, 0.541);
-          box-shadow: 2px 3px 5px rgba(119, 119, 119, 0.541);
+  -webkit-box-shadow: 2px 1px 5px whitesmoke;
+          box-shadow: 2px 1px 5px whitesmoke;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .ah-category .ah-category-div .ah-category-option .ah-category-option-text {
   display: inline-block;
-  font-size: 16px;
+  font-size: 26px;
+  font-family: 'Exo', sans-serif;
+  letter-spacing: 2px;
   position: absolute;
   font-weight: bold;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: #555;
   background-color: transparent;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -210,46 +254,57 @@ body {
 }
 
 .ah-category .ah-category-div .smoothie {
-  margin-left: 50px;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(245, 245, 220, 0.915)), to(rgba(245, 245, 220, 0.215))), url("../images/smoothie.png");
-  background-image: linear-gradient(to bottom right, rgba(245, 245, 220, 0.915), rgba(245, 245, 220, 0.215)), url("../images/smoothie.png");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(194, 253, 167, 0.8)), to(rgba(230, 230, 219, 0.6))), url("../images/smoothie.png");
+  background-image: linear-gradient(to bottom right, rgba(194, 253, 167, 0.8), rgba(230, 230, 219, 0.6)), url("../images/smoothie.png");
+}
+
+.ah-category .ah-category-div .smoothie .ah-category-option-text {
+  color: #cefdc5;
 }
 
 .ah-category .ah-category-div .slush {
-  margin-right: 50px;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(245, 245, 220, 0.915)), to(rgba(245, 245, 220, 0.215))), url("../images/slush.png");
-  background-image: linear-gradient(to bottom right, rgba(245, 245, 220, 0.915), rgba(245, 245, 220, 0.215)), url("../images/slush.png");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(243, 166, 239, 0.8)), to(rgba(247, 213, 61, 0.6))), url("../images/slush.png");
+  background-image: linear-gradient(to bottom right, rgba(243, 166, 239, 0.8), rgba(247, 213, 61, 0.6)), url("../images/slush.png");
+}
+
+.ah-category .ah-category-div .slush .ah-category-option-text {
+  color: #ffd9d9;
 }
 
 .ah-category .ah-category-div .coffee {
-  margin-left: 50px;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(245, 245, 220, 0.915)), to(rgba(245, 245, 220, 0.215))), url("../images/coffee.png");
-  background-image: linear-gradient(to bottom right, rgba(245, 245, 220, 0.915), rgba(245, 245, 220, 0.215)), url("../images/coffee.png");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(136, 66, 8, 0.8)), to(rgba(233, 233, 224, 0.6))), url("../images/coffee.png");
+  background-image: linear-gradient(to bottom right, rgba(136, 66, 8, 0.8), rgba(233, 233, 224, 0.6)), url("../images/coffee.png");
+}
+
+.ah-category .ah-category-div .coffee .ah-category-option-text {
+  color: #e4d8b6;
 }
 
 .ah-category .ah-category-div .tea {
-  margin-right: 50px;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(245, 245, 220, 0.915)), to(rgba(245, 245, 220, 0.215))), url("../images/tea.png");
-  background-image: linear-gradient(to bottom right, rgba(245, 245, 220, 0.915), rgba(245, 245, 220, 0.215)), url("../images/tea.png");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(228, 200, 41, 0.8)), to(rgba(245, 228, 205, 0.6))), url("../images/tea.png");
+  background-image: linear-gradient(to bottom right, rgba(228, 200, 41, 0.8), rgba(245, 228, 205, 0.6)), url("../images/tea.png");
+}
+
+.ah-category .ah-category-div .tea .ah-category-option-text {
+  color: #f0edd3;
 }
 
 .ah-ordering {
-  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-          clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-  background-color: transparent;
-  height: 150vh;
+  height: 120vh;
 }
 
 .ah-ordering .ah-ordering-div {
+  height: 100%;
   position: absolute;
-  height: 70%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
   margin: 0 auto;
+  padding: 20px;
   text-align: center;
+  background-clip: content-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,18 +321,23 @@ body {
 }
 
 .ah-ordering .ah-ordering-div .ah-ordering-h3 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 35px;
-  margin-bottom: 40px;
+  color: #f0e9e4;
+  -ms-flex-preferred-size: 12.5%;
+      flex-basis: 12.5%;
   width: 100%;
+  height: 100%;
 }
 
 .ah-ordering .ah-ordering-div .ah-ordering-option {
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   width: 100%;
+  height: 100%;
   position: relative;
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -294,6 +354,8 @@ body {
 
 .ah-ordering .ah-ordering-div .direct-order {
   background-image: url("https://raster-static.postmates.com/?url=com.postmates.img.prod.s3.amazonaws.com%2F15390782-2588-46f5-bea8-b0b04c7458a9%2Forig.jpg&quality=85&w=1500&h=0&mode=auto&format=&v=4");
+  clear: both;
+  font-family: 'Amatic SC', cursive;
 }
 
 .ah-ordering .ah-ordering-div .direct-order .ah-ordering-option-text {
@@ -306,7 +368,7 @@ body {
           transform: translate(-50%, -50%);
   color: white;
   opacity: 1;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bolder;
   letter-spacing: 5px;
 }
