@@ -31,7 +31,9 @@ body {
 .ah-header .ah-order {
   font-size: 18px;
   padding: 2.5px 15px;
-  border: 1px solid #a55c28;
+  color: #532e14;
+  font-weight: 400;
+  border: 2.5px solid #a55c28;
   border-radius: 0.25rem;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
@@ -129,6 +131,10 @@ body {
 /*
 ** Section-Category Style
 */
+.ah-category {
+  height: 200vh;
+}
+
 .ah-category .ah-category-div {
   position: absolute;
   height: 70%;
@@ -163,30 +169,75 @@ body {
 .ah-category .ah-category-div .ah-category-option {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
-  width: calc(100% - 30px);
-  margin: 10px auto;
-  height: 25%;
+  width: calc(100% - 200px);
+  margin: 20px auto;
+  height: 100%;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
-  background-color: wheat;
+  background-color: transparent;
+  -webkit-box-shadow: 2px 3px 5px rgba(119, 119, 119, 0.541);
+          box-shadow: 2px 3px 5px rgba(119, 119, 119, 0.541);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .ah-category .ah-category-div .ah-category-option .ah-category-option-text {
   display: inline-block;
+  font-size: 16px;
   position: absolute;
+  font-weight: bold;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: #a55c28;
+  color: #555;
   background-color: transparent;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.ah-category .ah-category-div .ah-category-option:hover {
+  opacity: 1;
+  height: 100%;
+  z-index: 1;
+}
+
+.ah-category .ah-category-div .ah-category-option:hover .ah-category-option-text {
+  font-size: 30px;
+}
+
+.ah-category .ah-category-div .smoothie {
+  margin-left: 50px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(245, 245, 220, 0.915)), to(rgba(245, 245, 220, 0.215))), url("../images/smoothie.png");
+  background-image: linear-gradient(to bottom right, rgba(245, 245, 220, 0.915), rgba(245, 245, 220, 0.215)), url("../images/smoothie.png");
+}
+
+.ah-category .ah-category-div .slush {
+  margin-right: 50px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(245, 245, 220, 0.915)), to(rgba(245, 245, 220, 0.215))), url("../images/slush.png");
+  background-image: linear-gradient(to bottom right, rgba(245, 245, 220, 0.915), rgba(245, 245, 220, 0.215)), url("../images/slush.png");
+}
+
+.ah-category .ah-category-div .coffee {
+  margin-left: 50px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(245, 245, 220, 0.915)), to(rgba(245, 245, 220, 0.215))), url("../images/coffee.png");
+  background-image: linear-gradient(to bottom right, rgba(245, 245, 220, 0.915), rgba(245, 245, 220, 0.215)), url("../images/coffee.png");
+}
+
+.ah-category .ah-category-div .tea {
+  margin-right: 50px;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(245, 245, 220, 0.915)), to(rgba(245, 245, 220, 0.215))), url("../images/tea.png");
+  background-image: linear-gradient(to bottom right, rgba(245, 245, 220, 0.915), rgba(245, 245, 220, 0.215)), url("../images/tea.png");
 }
 
 .ah-ordering {
   -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
           clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-  background-color: wheat;
+  background-color: transparent;
+  height: 150vh;
 }
 
 .ah-ordering .ah-ordering-div {
@@ -215,16 +266,19 @@ body {
 }
 
 .ah-ordering .ah-ordering-div .ah-ordering-h3 {
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-size: 35px;
+  margin-bottom: 40px;
+  width: 100%;
 }
 
 .ah-ordering .ah-ordering-div .ah-ordering-option {
-  width: calc(100% - 30px);
-  height: 10%;
-  background-color: beige;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  width: 100%;
   position: relative;
-  margin: 10px auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .ah-ordering .ah-ordering-div .ah-ordering-option .ah-ordering-option-text {
@@ -235,5 +289,33 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: black;
+  opacity: 0;
+}
+
+.ah-ordering .ah-ordering-div .direct-order {
+  background-image: url("https://raster-static.postmates.com/?url=com.postmates.img.prod.s3.amazonaws.com%2F15390782-2588-46f5-bea8-b0b04c7458a9%2Forig.jpg&quality=85&w=1500&h=0&mode=auto&format=&v=4");
+}
+
+.ah-ordering .ah-ordering-div .direct-order .ah-ordering-option-text {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  opacity: 1;
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+
+.ah-ordering .ah-ordering-div .doordash {
+  background-image: url("https://th.bing.com/th/id/Ra59dc8c2ef9ea2cc1356b0d217666ea8?rik=EBSLEEONJUQgBg&pid=ImgRaw");
+}
+
+.ah-ordering .ah-ordering-div .grubhub {
+  background-image: url("https://th.bing.com/th/id/Rc7e97f24b095c8e168a5dcd6a88526f4?rik=85JgGFyHzQKMtQ&pid=ImgRaw");
 }
 /*# sourceMappingURL=body.css.map */
