@@ -1,6 +1,7 @@
 @import "./variables";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+// 'Open Sans', sans-serif;
 
 body {
   font-size: 16px;
@@ -12,3 +13,4 @@ body {
 @import "./header/header";
 @import "./main/main";
 @import "./section/section";
+@import "./footer/footer";
