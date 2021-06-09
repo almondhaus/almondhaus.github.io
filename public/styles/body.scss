@@ -1,12 +1,11 @@
 @import "./variables";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   color: $fontColor;
-
-  background-color: $backgroundColor;
+  background-color: $borderColor;
 }
 
 @import "./header/header";

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
@@ -9,7 +10,7 @@ body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   color: #aa7d5e;
-  background-color: #fff;
+  background-color: #cdb3a1;
 }
 
 .ah-header {
@@ -18,7 +19,7 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background-color: #f0e9e4;
+  background-color: #b38a6f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +29,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #f0e9e4;
+  border-bottom: 1px solid #dfcec2;
 }
 
 .ah-header .ah-h1 {
@@ -51,7 +52,7 @@ body {
 .ah-main {
   position: relative;
   height: calc(100vh - 61px);
-  background-color: white;
+  background-color: #c4a590;
   padding: 0 15px;
 }
 
@@ -153,13 +154,13 @@ body {
 
 .ah-about .ah-about-div .ah-about-h3 {
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  color: #f0e9e4;
+  color: #b38a6f;
   font-size: 35px;
   margin-bottom: 20px;
 }
 
 .ah-about .ah-about-div .ah-about-p {
-  color: white;
+  color: #bc987f;
   font-size: 16px;
   line-height: 2;
 }
@@ -197,7 +198,7 @@ body {
   height: 10%;
   top: 2.5%;
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  color: #f0e9e4;
+  color: #b38a6f;
   font-size: 35px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -323,7 +324,7 @@ body {
 .ah-ordering .ah-ordering-div .ah-ordering-h3 {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 35px;
-  color: #f0e9e4;
+  color: #b38a6f;
   -ms-flex-preferred-size: 12.5%;
       flex-basis: 12.5%;
   width: 100%;

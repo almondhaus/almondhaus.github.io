@@ -5,7 +5,7 @@
 .ah-main {
   position: relative;
   height: calc(100vh - 61px);
-  background-color:lighten($color: $fontColor, $amount: 50);
+  background-color:lighten($color: $fontColor, $amount: 15);
   padding: 0 15px;
 
   .ah-main-div {
