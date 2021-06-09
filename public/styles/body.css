@@ -16,7 +16,7 @@ body {
 
 .ah-header {
   width: 100%;
-  padding: 15px;
+  padding: 20px 15px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -34,8 +34,16 @@ body {
 }
 
 .ah-header .ah-h1 {
+  display: inline;
   font-size: 20px;
   font-family: 'Cute Font', cursive;
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.ah-header i {
   color: white;
 }
 
@@ -257,7 +265,7 @@ body {
 .ah-ordering .ah-ordering-div {
   height: 100%;
   position: absolute;
-  background-color: #aa7d5e;
+  background-color: transparent;
   -webkit-box-shadow: 1px 2px 3px whitesmoke;
           box-shadow: 1px 2px 3px whitesmoke;
   top: 50%;
@@ -266,7 +274,7 @@ body {
           transform: translate(-50%, -50%);
   width: 90%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0;
   text-align: center;
   background-clip: border-box;
   display: -webkit-box;
@@ -286,19 +294,16 @@ body {
 }
 
 .ah-ordering .ah-ordering-div .ah-ordering-h3 {
+  display: inline-block;
+  font-size: 25px;
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-size: 35px;
-  color: white;
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-  width: 100%;
-  height: 100%;
+  letter-spacing: 2px;
 }
 
 .ah-ordering .ah-ordering-div .ah-ordering-option {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  margin: 10px auto;
+  margin: 0px auto;
   width: 100%;
   height: 100%;
   position: relative;
@@ -316,10 +321,9 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: white;
+  color: #aa7d5e;
   opacity: 1;
-  padding: 20px;
-  border: 1px solid white;
-  border-radius: 0.5rem;
+  padding: 20px 0;
+  border: 1px solid #aa7d5e;
 }
 /*# sourceMappingURL=body.css.map */

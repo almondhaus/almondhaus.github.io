@@ -4,7 +4,7 @@
 
 .ah-header {
   width: 100%;
-  padding: 15px;
+  padding: 20px 15px;
   height: max-content;
   background-color:lighten($color: $fontColor, $amount: 5);
   display: flex;
@@ -13,8 +13,14 @@
   border-bottom: 1px solid lighten($color: $borderColor, $amount: 10);
 
   .ah-h1 {
+    display: inline;
     font-size: 20px;
     font-family: 'Cute Font', cursive;
+    color: white;
+    align-self: center;
+  }
+
+  i {
     color: white;
   }
 
