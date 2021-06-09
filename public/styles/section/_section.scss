@@ -10,7 +10,7 @@
 .ah-section {
   height: 100vh;
   position: relative;
-  background-color: $backgroundColor;
+  background-color: white;
 }
 
 /*
@@ -26,7 +26,7 @@
 
   height: 50vh;
   .ah-about-div {
-    background-color: transparent;
+
 
     width: 100%;
     padding: 0 15px;
@@ -42,6 +42,8 @@
       color: lighten($color: $fontColor, $amount: 5);
       
       font-size: 35px;
+
+      padding-bottom: 20px;
       margin-bottom: 20px;
     }
 
@@ -80,22 +82,20 @@
     justify-content: space-between;
 
     .ah-category-h3 {
-      height: 10%;
-      top: 2.5%;
+      padding: 20px;
       font-family: 'M PLUS Rounded 1c', sans-serif;
       color: lighten($color: $fontColor, $amount: 5);
-      font-size: 35px;
+      font-size: 30px;
       align-self: center;
       position: relative;
-
     }
 
     .ah-category-option {
       align-self: center;
-      width: calc(100%);
+      width: 90%;
       flex-basis: 22.5%;
-      margin: 0 auto;
-      background-clip: content-box;
+      margin: 20px auto;
+
       padding: 20px;
 
       opacity: 0.8;
@@ -106,18 +106,20 @@
 
       position: relative;
       background-color: transparent;
-      box-shadow: 2px 1px 5px whitesmoke;
+      border: 1px solid burlywood;
+
       transition: all 0.3s ease;
 
       .ah-category-option-text {
         display: inline-block;
-        font-size: 26px;
-        font-family: 'Exo', sans-serif;
+        font-size: 25px;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
         letter-spacing: 2px;
         position: absolute;
-        font-weight: bold;
+
         top: 50%;
         left: 50%;
+        color: $fontColor;
         transform: translate(-50%, -50%);
 
         background-color: transparent;
@@ -138,59 +140,58 @@
     .smoothie {
       // margin-left: 50px;
 
-      background-image: linear-gradient(
-          to bottom right,
-          rgba(194, 253, 167, 0.8),
-          rgba(230, 230, 219, 0.6)
-        ),
-        url("../images/smoothie.png");
+      // background-image: linear-gradient(
+      //     to bottom right,
+      //     rgba(194, 253, 167, 0.8),
+      //     rgba(230, 230, 219, 0.6)
+      //   ),
+      //   url("../images/smoothie.png");
 
         .ah-category-option-text {
-          color: rgb(206, 253, 197);
+         
         }
     }
 
     .slush {
       // margin-right: 50px;
 
-      background-image: linear-gradient(
-          to bottom right,
-          rgba(243, 166, 239, 0.8),
-          rgba(247, 213, 61, 0.6)
-        ),
-        url("../images/slush.png");
+      // background-image: linear-gradient(
+      //     to bottom right,
+      //     rgba(243, 166, 239, 0.8),
+      //     rgba(247, 213, 61, 0.6)
+      //   ),
+      //   url("../images/slush.png");
         
         .ah-category-option-text {
-          color: rgb(255, 217, 217);
+         
         }
     }
 
     .coffee {
       // margin-left: 50px;
-
-      background-image: linear-gradient(
-          to bottom right,
-          rgba(136, 66, 8, 0.8),
-          rgba(233, 233, 224, 0.6)
-        ),
-        url("../images/coffee.png");
+      // background-image: linear-gradient(
+      //     to bottom right,
+      //     rgba(136, 66, 8, 0.8),
+      //     rgba(233, 233, 224, 0.6)
+      //   ),
+      //   url("../images/coffee.png");
         .ah-category-option-text {
-          color: rgb(228, 216, 182);
+       
         }
     }
 
     .tea {
       // margin-right: 50px;
 
-      background-image: linear-gradient(
-          to bottom right,
-          rgba(228, 200, 41, 0.8),
-          rgba(245, 228, 205, 0.6)
-        ),
-        url("../images/tea.png");
+      // background-image: linear-gradient(
+      //     to bottom right,
+      //     rgba(228, 200, 41, 0.8),
+      //     rgba(245, 228, 205, 0.6)
+      //   ),
+      //   url("../images/tea.png");
 
         .ah-category-option-text {
-          color: rgb(240, 237, 211);
+         
         }
     }
   }
@@ -199,84 +200,67 @@
 .ah-ordering {
 
 
-  height: 120vh;
+  height: 50vh;
+  margin: 20px auto;
 
 
 
   .ah-ordering-div {
     height: 100%;
     position: absolute;
+    background-color:$fontColor;
+    box-shadow: 1px 2px 3px whitesmoke;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    background-clip: content-box;
+    background-clip: border-box;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 0.5rem;
+    
 
     .ah-ordering-h3 {
       font-family: 'M PLUS Rounded 1c', sans-serif;
       font-size: 35px;
-      color: lighten($color: $fontColor, $amount: 5);
-      flex-basis: 12.5%;
+      color: lighten($color: $fontColor, $amount: 55);
+      flex-basis: 20%;
       width: 100%;
       height: 100%;
     }
 
     .ah-ordering-option {
-      flex-basis: 25%;
+      flex-basis: 50%;
+      margin: 10px auto;
       width: 100%;
       height: 100%;
       position: relative;
       background-position: center;
       background-size: 100%;
       background-repeat: no-repeat;
-
-
-      .ah-ordering-option-text {
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: black;
-        opacity: 0;
-      }
-    }
-
-    .direct-order {
-      background-image: url("https://raster-static.postmates.com/?url=com.postmates.img.prod.s3.amazonaws.com%2F15390782-2588-46f5-bea8-b0b04c7458a9%2Forig.jpg&quality=85&w=1500&h=0&mode=auto&format=&v=4");
-      clear: both;
-      font-family: 'Amatic SC', cursive;
+      border-radius: 3rem / 90%;
 
       .ah-ordering-option-text {
-        display: inline-block;
         width: 100%;
+        display: inline-block;
         position: absolute;
         top: 50%;
-
         left: 50%;
         transform: translate(-50%, -50%);
-        color: rgb(255, 255, 255);
+        color: white;
         opacity: 1;
-        font-size: 40px;
-        font-weight: bolder;
-        letter-spacing: 5px;
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 0.5rem;
       }
     }
 
-    .doordash {
-      background-image: url("https://th.bing.com/th/id/Ra59dc8c2ef9ea2cc1356b0d217666ea8?rik=EBSLEEONJUQgBg&pid=ImgRaw");
-    }
 
-    .grubhub {
-      background-image: url("https://th.bing.com/th/id/Rc7e97f24b095c8e168a5dcd6a88526f4?rik=85JgGFyHzQKMtQ&pid=ImgRaw");
-    }
   }
 }

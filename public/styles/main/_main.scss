@@ -5,8 +5,9 @@
 .ah-main {
   position: relative;
   height: calc(100vh - 61px);
-  background-color:lighten($color: $fontColor, $amount: 15);
+  background-color:wheat;
   padding: 0 15px;
+  
 
   .ah-main-div {
     position: absolute;
@@ -24,6 +25,7 @@
       letter-spacing: 2px;
       font-family: "Abel", sans-serif;
       color: white;
+      font-weight: 700;
     }
 
     .ah-h4 {
@@ -32,15 +34,16 @@
       letter-spacing: 5.5px;
       margin-bottom: 32.5px;
       font-family: "Abel", sans-serif;
+      color: white;
       
       
 
       .ah-h4-span-top {
-        color: whitesmoke;
+
       }
 
       .ah-h4-span-bottom {
-        color: whitesmoke;
+        
       }
     }
 
@@ -53,7 +56,7 @@
       margin: 0 auto;
       padding: 5px 10px;
       text-align: center;
-      border-bottom: 1px solid $backgroundColor;
+      border-bottom: 1px solid white;
       .ah-main-input {
 
         margin-right: 10px;
@@ -62,10 +65,11 @@
         //     rgba(223, 155, 77, 0.979),
         //     rgb(122, 67, 27)
         // );
-        color: $backgroundColor;
+        color: white;
         background-color:transparent;
         font-size: 18px;
         font-weight: lighter;
+        
         &:hover {
           opacity: 1;
         }

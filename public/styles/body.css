@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
@@ -10,7 +11,7 @@ body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   color: #aa7d5e;
-  background-color: #cdb3a1;
+  background-color: white;
 }
 
 .ah-header {
@@ -34,13 +35,16 @@ body {
 
 .ah-header .ah-h1 {
   font-size: 20px;
-  font-family: "Abel", sans-serif;
+  font-family: 'Cute Font', cursive;
   color: white;
 }
 
 .ah-header .ah-order {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-size: 18px;
-  padding: 2.5px 15px;
+  padding: 2.5px 0;
   color: white;
   font-weight: 400;
   border-radius: 0.25rem;
@@ -52,7 +56,7 @@ body {
 .ah-main {
   position: relative;
   height: calc(100vh - 61px);
-  background-color: #c4a590;
+  background-color: wheat;
   padding: 0 15px;
 }
 
@@ -73,6 +77,7 @@ body {
   letter-spacing: 2px;
   font-family: "Abel", sans-serif;
   color: white;
+  font-weight: 700;
 }
 
 .ah-main .ah-main-div .ah-h4 {
@@ -80,14 +85,7 @@ body {
   letter-spacing: 5.5px;
   margin-bottom: 32.5px;
   font-family: "Abel", sans-serif;
-}
-
-.ah-main .ah-main-div .ah-h4 .ah-h4-span-top {
-  color: whitesmoke;
-}
-
-.ah-main .ah-main-div .ah-h4 .ah-h4-span-bottom {
-  color: whitesmoke;
+  color: white;
 }
 
 .ah-main .ah-main-div .ah-main-inner-div {
@@ -106,12 +104,12 @@ body {
   margin: 0 auto;
   padding: 5px 10px;
   text-align: center;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid white;
 }
 
 .ah-main .ah-main-div .ah-main-inner-div .ah-main-input {
   margin-right: 10px;
-  color: #fff;
+  color: white;
   background-color: transparent;
   font-size: 18px;
   font-weight: lighter;
@@ -129,7 +127,7 @@ body {
 .ah-section {
   height: 100vh;
   position: relative;
-  background-color: #fff;
+  background-color: white;
 }
 
 /*
@@ -140,7 +138,6 @@ body {
 }
 
 .ah-about .ah-about-div {
-  background-color: transparent;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -156,6 +153,7 @@ body {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   color: #b38a6f;
   font-size: 35px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
 }
 
@@ -195,11 +193,10 @@ body {
 }
 
 .ah-category .ah-category-div .ah-category-h3 {
-  height: 10%;
-  top: 2.5%;
+  padding: 20px;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   color: #b38a6f;
-  font-size: 35px;
+  font-size: 30px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -210,11 +207,10 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: calc(100%);
+  width: 90%;
   -ms-flex-preferred-size: 22.5%;
       flex-basis: 22.5%;
-  margin: 0 auto;
-  background-clip: content-box;
+  margin: 20px auto;
   padding: 20px;
   opacity: 0.8;
   background-position: center;
@@ -222,21 +218,20 @@ body {
   background-repeat: no-repeat;
   position: relative;
   background-color: transparent;
-  -webkit-box-shadow: 2px 1px 5px whitesmoke;
-          box-shadow: 2px 1px 5px whitesmoke;
+  border: 1px solid burlywood;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .ah-category .ah-category-div .ah-category-option .ah-category-option-text {
   display: inline-block;
-  font-size: 26px;
-  font-family: 'Exo', sans-serif;
+  font-size: 25px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   letter-spacing: 2px;
   position: absolute;
-  font-weight: bold;
   top: 50%;
   left: 50%;
+  color: #aa7d5e;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: transparent;
@@ -254,58 +249,26 @@ body {
   font-size: 30px;
 }
 
-.ah-category .ah-category-div .smoothie {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(194, 253, 167, 0.8)), to(rgba(230, 230, 219, 0.6))), url("../images/smoothie.png");
-  background-image: linear-gradient(to bottom right, rgba(194, 253, 167, 0.8), rgba(230, 230, 219, 0.6)), url("../images/smoothie.png");
-}
-
-.ah-category .ah-category-div .smoothie .ah-category-option-text {
-  color: #cefdc5;
-}
-
-.ah-category .ah-category-div .slush {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(243, 166, 239, 0.8)), to(rgba(247, 213, 61, 0.6))), url("../images/slush.png");
-  background-image: linear-gradient(to bottom right, rgba(243, 166, 239, 0.8), rgba(247, 213, 61, 0.6)), url("../images/slush.png");
-}
-
-.ah-category .ah-category-div .slush .ah-category-option-text {
-  color: #ffd9d9;
-}
-
-.ah-category .ah-category-div .coffee {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(136, 66, 8, 0.8)), to(rgba(233, 233, 224, 0.6))), url("../images/coffee.png");
-  background-image: linear-gradient(to bottom right, rgba(136, 66, 8, 0.8), rgba(233, 233, 224, 0.6)), url("../images/coffee.png");
-}
-
-.ah-category .ah-category-div .coffee .ah-category-option-text {
-  color: #e4d8b6;
-}
-
-.ah-category .ah-category-div .tea {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(228, 200, 41, 0.8)), to(rgba(245, 228, 205, 0.6))), url("../images/tea.png");
-  background-image: linear-gradient(to bottom right, rgba(228, 200, 41, 0.8), rgba(245, 228, 205, 0.6)), url("../images/tea.png");
-}
-
-.ah-category .ah-category-div .tea .ah-category-option-text {
-  color: #f0edd3;
-}
-
 .ah-ordering {
-  height: 120vh;
+  height: 50vh;
+  margin: 20px auto;
 }
 
 .ah-ordering .ah-ordering-div {
   height: 100%;
   position: absolute;
+  background-color: #aa7d5e;
+  -webkit-box-shadow: 1px 2px 3px whitesmoke;
+          box-shadow: 1px 2px 3px whitesmoke;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  background-clip: content-box;
+  background-clip: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,49 +282,35 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 0.5rem;
 }
 
 .ah-ordering .ah-ordering-div .ah-ordering-h3 {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 35px;
-  color: #b38a6f;
-  -ms-flex-preferred-size: 12.5%;
-      flex-basis: 12.5%;
+  color: white;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
   width: 100%;
   height: 100%;
 }
 
 .ah-ordering .ah-ordering-div .ah-ordering-option {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin: 10px auto;
   width: 100%;
   height: 100%;
   position: relative;
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+  border-radius: 3rem / 90%;
 }
 
 .ah-ordering .ah-ordering-div .ah-ordering-option .ah-ordering-option-text {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: black;
-  opacity: 0;
-}
-
-.ah-ordering .ah-ordering-div .direct-order {
-  background-image: url("https://raster-static.postmates.com/?url=com.postmates.img.prod.s3.amazonaws.com%2F15390782-2588-46f5-bea8-b0b04c7458a9%2Forig.jpg&quality=85&w=1500&h=0&mode=auto&format=&v=4");
-  clear: both;
-  font-family: 'Amatic SC', cursive;
-}
-
-.ah-ordering .ah-ordering-div .direct-order .ah-ordering-option-text {
-  display: inline-block;
   width: 100%;
+  display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -369,16 +318,8 @@ body {
           transform: translate(-50%, -50%);
   color: white;
   opacity: 1;
-  font-size: 40px;
-  font-weight: bolder;
-  letter-spacing: 5px;
-}
-
-.ah-ordering .ah-ordering-div .doordash {
-  background-image: url("https://th.bing.com/th/id/Ra59dc8c2ef9ea2cc1356b0d217666ea8?rik=EBSLEEONJUQgBg&pid=ImgRaw");
-}
-
-.ah-ordering .ah-ordering-div .grubhub {
-  background-image: url("https://th.bing.com/th/id/Rc7e97f24b095c8e168a5dcd6a88526f4?rik=85JgGFyHzQKMtQ&pid=ImgRaw");
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 0.5rem;
 }
 /*# sourceMappingURL=body.css.map */

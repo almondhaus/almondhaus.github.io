@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 // "Abel", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+
 .ah-header {
   width: 100%;
   padding: 15px;
@@ -12,16 +14,16 @@
 
   .ah-h1 {
     font-size: 20px;
-    font-family: "Abel", sans-serif;
+    font-family: 'Cute Font', cursive;
     color: white;
   }
 
   .ah-order {
+    align-self: center;
     font-size: 18px;
-    padding: 2.5px 15px;
+    padding: 2.5px 0;
     color: white;
     font-weight: 400;
-
     border-radius: 0.25rem;
     font-family: "Abel", sans-serif;
 
