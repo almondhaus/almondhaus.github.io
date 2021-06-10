@@ -4,3 +4,10 @@ $borderColor: lighten(
   $color: $fontColor,
   $amount: 20,
 );
+
+$themeMain: lighten($color: $fontColor, $amount: 5);
+$themeMainDark: rgb(27, 24, 19);
+
+
+$themeWhite: #fff;
+$themWhiteDark: rgb(26, 21, 21);

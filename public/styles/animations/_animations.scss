@@ -1,0 +1,48 @@
+@keyframes  main_header_Opacify {
+    100% {
+        opacity: 1;
+    }
+}
+
+.ah-header, .ah-main {
+    opacity: 0;
+    animation: 1.5s main_header_Opacify forwards;
+}
+
+@keyframes main_order_animation {
+    70% {
+        padding-bottom: 20px;
+        border-radius: 50%;
+    }
+
+    100% {
+        padding-bottom: 10px;
+        opacity: 1;
+        left: 0%;
+    }
+}
+
+.ah-main-inner-div {
+    opacity: 0;
+    left: -50%;
+    border-radius: 0;
+    animation: 1s main_order_animation 0.8s forwards;
+}
+
+@keyframes main_order_arrow_animation {
+
+    35% {
+        margin-left:20px;
+        transform: scale(2);
+    }
+    100% {
+        margin-left:0;
+        transform: scale(1) rotate(450deg);
+    }
+}
+
+.fa-arrow-right {
+    margin-left: 0;
+    transform: scale(1) rotate(0);
+    animation: 1s main_order_arrow_animation 1.6s forwards;
+}

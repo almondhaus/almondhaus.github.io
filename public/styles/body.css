@@ -17,13 +17,97 @@ body {
   background-color: white;
 }
 
+@-webkit-keyframes main_header_Opacify {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes main_header_Opacify {
+  100% {
+    opacity: 1;
+  }
+}
+
+.ah-header, .ah-main {
+  opacity: 0;
+  -webkit-animation: 1.5s main_header_Opacify forwards;
+          animation: 1.5s main_header_Opacify forwards;
+}
+
+@-webkit-keyframes main_order_animation {
+  70% {
+    padding-bottom: 20px;
+    border-radius: 50%;
+  }
+  100% {
+    padding-bottom: 10px;
+    opacity: 1;
+    left: 0%;
+  }
+}
+
+@keyframes main_order_animation {
+  70% {
+    padding-bottom: 20px;
+    border-radius: 50%;
+  }
+  100% {
+    padding-bottom: 10px;
+    opacity: 1;
+    left: 0%;
+  }
+}
+
+.ah-main-inner-div {
+  opacity: 0;
+  left: -50%;
+  border-radius: 0;
+  -webkit-animation: 1s main_order_animation 0.8s forwards;
+          animation: 1s main_order_animation 0.8s forwards;
+}
+
+@-webkit-keyframes main_order_arrow_animation {
+  35% {
+    margin-left: 20px;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    margin-left: 0;
+    -webkit-transform: scale(1) rotate(450deg);
+            transform: scale(1) rotate(450deg);
+  }
+}
+
+@keyframes main_order_arrow_animation {
+  35% {
+    margin-left: 20px;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    margin-left: 0;
+    -webkit-transform: scale(1) rotate(450deg);
+            transform: scale(1) rotate(450deg);
+  }
+}
+
+.fa-arrow-right {
+  margin-left: 0;
+  -webkit-transform: scale(1) rotate(0);
+          transform: scale(1) rotate(0);
+  -webkit-animation: 1s main_order_arrow_animation 1.6s forwards;
+          animation: 1s main_order_arrow_animation 1.6s forwards;
+}
+
 .ah-header {
+  background-color: wheat;
   width: 100%;
   padding: 20px 15px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background-color: #b38a6f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,14 +117,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #dfcec2;
+  position: fixed;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .ah-header .ah-h1 {
   display: inline;
   font-size: 20px;
   font-family: "Abel", sans-serif;
-  color: white;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -48,28 +134,41 @@ body {
 }
 
 .ah-header i {
-  color: white;
+  color: #1a1515;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.ah-header .ah-order {
+.ah-header .fa-moon {
+  display: block;
+}
+
+.ah-header .fa-sun {
+  display: none;
+}
+
+.ah-header .ah-mode {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-size: 18px;
-  padding: 2.5px 0;
-  color: white;
+  font-size: 20px;
+  padding: 2.5px 5px;
+  background-color: #b38a6f;
   font-weight: 400;
-  border-radius: 0.25rem;
+  border-radius: 1.25rem;
+  border: 2px solid #b38a6f;
   font-family: "Abel", sans-serif;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
 
 .ah-main {
-  position: relative;
-  height: calc(100vh - 61px);
   background-color: wheat;
+  position: relative;
+  height: calc(100vh);
   padding: 0 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .ah-main .ah-main-div {
@@ -88,16 +187,18 @@ body {
   font-size: 45px;
   letter-spacing: 2px;
   font-family: "Abel", sans-serif;
-  color: white;
   font-weight: 700;
+  color: #fff;
+  background-color: transparent;
 }
 
 .ah-main .ah-main-div .ah-h4 {
+  background-color: transparent;
   font-size: 20px;
+  color: #fff;
   letter-spacing: 5.5px;
   margin-bottom: 32.5px;
   font-family: "Abel", sans-serif;
-  color: white;
 }
 
 .ah-main .ah-main-div .ah-main-inner-div {
@@ -137,9 +238,11 @@ body {
 }
 
 .ah-section {
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px auto;
   position: relative;
-  background-color: white;
 }
 
 /*
@@ -163,15 +266,14 @@ body {
 
 .ah-about .ah-about-div .ah-about-h3 {
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  color: #b38a6f;
   font-size: 35px;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
 
 .ah-about .ah-about-div .ah-about-p {
-  color: #bc987f;
-  font-size: 16px;
+  width: 80%;
+  margin: 0 auto;
   line-height: 2;
 }
 
@@ -180,7 +282,6 @@ body {
 */
 .ah-category {
   height: 60vh;
-  margin: 20px auto;
 }
 
 .ah-category .ah-category-div {
@@ -264,88 +365,16 @@ body {
   font-size: 30px;
 }
 
-.ah-ordering {
-  height: 50vh;
-  margin: 20px auto;
-}
-
-.ah-ordering .ah-ordering-div {
-  height: 100%;
-  position: absolute;
-  background-color: transparent;
-  -webkit-box-shadow: 1px 2px 3px whitesmoke;
-          box-shadow: 1px 2px 3px whitesmoke;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 90%;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  background-clip: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 0.5rem;
-}
-
-.ah-ordering .ah-ordering-div .ah-ordering-h3 {
-  display: inline-block;
-  font-size: 25px;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  letter-spacing: 2px;
-}
-
-.ah-ordering .ah-ordering-div .ah-ordering-option {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  margin: 0px auto;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  border-radius: 3rem / 90%;
-}
-
-.ah-ordering .ah-ordering-div .ah-ordering-option .ah-ordering-option-text {
-  width: 100%;
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #aa7d5e;
-  opacity: 1;
-  padding: 20px 0;
-  border: 1px solid #aa7d5e;
-}
-
 .ah-footer {
   background-color: #b38a6f;
-  border-top: 1px solid #dfcec2;
   padding: 20px 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
   font-weight: lighter;
   font-family: 'Open Sans', sans-serif;
@@ -432,5 +461,23 @@ body {
   font-style: italic;
   font-size: 12px;
   color: wheat;
+}
+
+.theme-main {
+  color: #b38a6f;
+}
+
+.theme-main-dark {
+  color: #1b1813;
+}
+
+.theme-white {
+  color: #fff;
+  background-color: #fff;
+}
+
+.theme-white-dark {
+  color: #1a1515;
+  background-color: #1a1515;
 }
 /*# sourceMappingURL=body.css.map */

@@ -10,7 +10,26 @@ body {
   background-color: white;
 }
 
+@import "./animations/animations";
 @import "./header/header";
 @import "./main/main";
 @import "./section/section";
 @import "./footer/footer";
+
+.theme-main {
+  color: $themeMain;
+}
+
+.theme-main-dark {
+  color: $themeMainDark;
+}
+
+.theme-white {
+  color: $themeWhite;
+  background-color: $themeWhite;
+}
+
+.theme-white-dark {
+  color: $themWhiteDark;
+  background-color: $themWhiteDark;
+}

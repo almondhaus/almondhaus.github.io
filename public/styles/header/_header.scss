@@ -3,35 +3,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
 
 .ah-header {
+  background-color: wheat;
   width: 100%;
   padding: 20px 15px;
   height: max-content;
-  background-color:lighten($color: $fontColor, $amount: 5);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid lighten($color: $borderColor, $amount: 10);
+  position: fixed;
+  z-index: 1;
+  transition: all 0.3s ease;
+ 
 
   .ah-h1 {
     display: inline;
     font-size: 20px;
     font-family: "Abel", sans-serif;
-    color: white;
     align-self: center;
     letter-spacing: 2px;
   }
 
   i {
-    color: white;
+    color: $themWhiteDark;
+    transition: all 0.3s ease;
   }
 
-  .ah-order {
+  .fa-moon {
+    display: block;
+  }
+
+  .fa-sun {
+    display: none;
+  }
+
+  .ah-mode {
     align-self: center;
-    font-size: 18px;
-    padding: 2.5px 0;
-    color: white;
+    font-size: 20px;
+    padding: 2.5px 5px;
+    background-color: $themeMain;
     font-weight: 400;
-    border-radius: 0.25rem;
+    border-radius: 1.25rem;
+    border:2px solid $themeMain;
     font-family: "Abel", sans-serif;
 
     transition: all 0.1s ease-in-out;

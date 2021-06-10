@@ -3,10 +3,11 @@
 
 
 .ah-main {
+  background-color: wheat;
   position: relative;
-  height: calc(100vh - 61px);
-  background-color:wheat;
+  height: calc(100vh);
   padding: 0 15px;
+  transition: all 0.3s ease;
   
 
   .ah-main-div {
@@ -24,18 +25,18 @@
       font-size: 45px;
       letter-spacing: 2px;
       font-family: "Abel", sans-serif;
-      color: white;
       font-weight: 700;
+      color: $themeWhite;
+      background-color: transparent;
     }
 
     .ah-h4 {
-
+      background-color: transparent;
       font-size: 20px;
+      color: $themeWhite;
       letter-spacing: 5.5px;
       margin-bottom: 32.5px;
       font-family: "Abel", sans-serif;
-      color: white;
-      
       
 
       .ah-h4-span-top {

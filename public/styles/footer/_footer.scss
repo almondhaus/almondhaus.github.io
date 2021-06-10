@@ -6,11 +6,12 @@
 // 'Open Sans', sans-serif;
 
 .ah-footer {
-    background-color:lighten($color: $fontColor, $amount: 5);
-    border-top:1px solid lighten($color: $borderColor, $amount: 10);
-    padding: 20px 10px;
+    background-color: $themeMain;
 
-    display: flex;
+    padding: 20px 10px;
+    
+
+    display: block;
     flex-direction: column;
     align-self: center;
     font-weight: lighter;
