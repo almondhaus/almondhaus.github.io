@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+// 'M PLUS Rounded 1c', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
+// 'Exo', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+// 'Open Sans', sans-serif;
+
+.ah-footer {
+    background-color:lighten($color: $fontColor, $amount: 5);
+    border-top:1px solid lighten($color: $borderColor, $amount: 10);
+    padding: 20px 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+
+    .ah-footer-top {
+        display: inline-flex;
+        justify-content: start;
+        align-items: center;
+        color: wheat;
+        letter-spacing: 1px;
+        
+        .footer-logo {
+            background-color: transparent;
+            padding: 5px 10px;
+            border-right: 1px solid wheat;
+            font-size: 18px;
+            letter-spacing: 5
+            px;
+        
+        }
+
+        .footer-logo-next {
+            background-color: transparent;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+
+    .ah-footer-main {
+        padding: 5px 10px;
+
+        .ah-footer-main-container {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+
+            .ah-footer-main-container-title {
+                margin-top: 15px;
+                color: darken($color: $fontColor, $amount: 30);
+
+            }
+
+            .ah-footer-main-container-link {
+                a {
+                    color: black;
+                    font-size:14px;
+                    text-decoration: underline;
+                }
+            }
+
+            .social-media {
+                display: flex;
+                width: 25%;
+                padding: 5px 0;
+                background-color: transparent;
+                justify-content: space-between;
+
+                i {
+                    font-size: 22.5px;
+                    color:rgb(237, 237, 241);
+                }
+            }
+        }
+    }
+
+    .ah-footer-bottom {
+        padding: 0px 10px;
+
+        p {
+            font-style: italic;
+            font-size: 12px;
+            color: wheat;
+        }
+    }
+}
