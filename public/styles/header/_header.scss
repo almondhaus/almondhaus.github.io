@@ -5,7 +5,7 @@
 .ah-header {
   background-color: wheat;
   width: 100%;
-  padding: 20px 15px;
+  padding: 10px 15px;
   height: max-content;
   display: flex;
   justify-content: space-between;
@@ -13,7 +13,7 @@
   position: fixed;
   z-index: 1;
   transition: all 0.3s ease;
- 
+  
 
   .ah-h1 {
     display: inline;
