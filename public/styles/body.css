@@ -179,7 +179,8 @@ body {
 ** Section-Category Style
 */
 .ah-category {
-  height: 100vh;
+  height: 60vh;
+  margin: 20px auto;
 }
 
 .ah-category .ah-category-div {
@@ -208,7 +209,7 @@ body {
   padding: 20px;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   color: #b38a6f;
-  font-size: 30px;
+  font-size: 40px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -219,11 +220,13 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 50%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   -ms-flex-preferred-size: 22.5%;
       flex-basis: 22.5%;
   margin: 20px auto;
-  padding: 20px;
+  padding: 20px 60px;
   opacity: 0.8;
   background-position: center;
   background-size: cover;
@@ -239,7 +242,7 @@ body {
   display: inline-block;
   font-size: 100%;
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -334,7 +337,7 @@ body {
 .ah-footer {
   background-color: #b38a6f;
   border-top: 1px solid #dfcec2;
-  padding: 10px;
+  padding: 20px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,6 +378,50 @@ body {
   padding: 5px 10px;
   font-size: 14px;
   font-weight: 300;
+}
+
+.ah-footer .ah-footer-main {
+  padding: 5px 10px;
+}
+
+.ah-footer .ah-footer-main .ah-footer-main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.ah-footer .ah-footer-main .ah-footer-main-container .ah-footer-main-container-title {
+  margin-top: 15px;
+  color: #493426;
+}
+
+.ah-footer .ah-footer-main .ah-footer-main-container .ah-footer-main-container-link a {
+  color: black;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.ah-footer .ah-footer-main .ah-footer-main-container .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  padding: 5px 0;
+  background-color: transparent;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ah-footer .ah-footer-main .ah-footer-main-container .social-media i {
+  font-size: 22.5px;
+  color: #ededf1;
 }
 
 .ah-footer .ah-footer-bottom {

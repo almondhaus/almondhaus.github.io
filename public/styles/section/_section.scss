@@ -66,7 +66,9 @@
   //     0 100%
   // );
 
-  height: 100vh;
+  height: 60vh;
+  margin: 20px auto;
+  
   .ah-category-div {
 
     position: absolute;
@@ -85,18 +87,18 @@
       padding: 20px;
       font-family: 'M PLUS Rounded 1c', sans-serif;
       color: lighten($color: $fontColor, $amount: 5);
-      font-size: 30px;
+      font-size: 40px;
       align-self: center;
       position: relative;
     }
 
     .ah-category-option {
       align-self: center;
-      width: 50%;
+      width: max-content;
       flex-basis: 22.5%;
       margin: 20px auto;
 
-      padding: 20px;
+      padding: 20px 60px;
 
       opacity: 0.8;
 
@@ -114,7 +116,7 @@
         display: inline-block;
         font-size: 100%;
         font-family: 'M PLUS Rounded 1c', sans-serif;
-        letter-spacing: 2px;
+        letter-spacing: 0;
         position: absolute;
 
         top: 50%;
