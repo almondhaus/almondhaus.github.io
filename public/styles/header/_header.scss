@@ -17,6 +17,7 @@
 
   .ah-h1 {
     display: inline;
+    cursor: pointer;
     font-size: 20px;
     font-family: "Abel", sans-serif;
     align-self: center;
@@ -24,6 +25,7 @@
   }
 
   i {
+    cursor: pointer;
     color: $themWhiteDark;
     transition: all 0.3s ease;
   }
@@ -47,5 +49,21 @@
     font-family: "Abel", sans-serif;
 
     transition: all 0.1s ease-in-out;
+  }
+}
+
+// media queries for min-width: 740px;
+@media (min-width: 740px) { 
+  .ah-header {
+    padding: 15px 2.5%;
+    .ah-h1 {
+      font-size: 25px;
+      letter-spacing: 2.5px;
+    }
+    .ah-mode {
+      font-size: 25px;
+      padding: 3.5px 7px;
+      border-radius: 0.5rem;
+    }
   }
 }

@@ -73,8 +73,12 @@
                 justify-content: space-between;
 
                 i {
-                    font-size: 22.5px;
-                    color:rgb(237, 237, 241);
+                    font-size: 20.5px;
+                    color:rgba(58, 54, 42, 0.767);
+                }
+
+                i:hover {
+                    color:rgba(58, 54, 42, 1);
                 }
             }
         }
@@ -87,6 +91,89 @@
             font-style: italic;
             font-size: 12px;
             color: wheat;
+        }
+    }
+}
+
+// media queries for min-width: 740px;
+@media (min-width: 740px) {
+    .ah-footer {
+        padding: 30px 2.5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .ah-footer-top {
+            flex-basis: 33%;
+            display: flex;
+            flex-direction: column;
+            align-items: top;
+            justify-content: start;
+            .footer-logo {
+                padding: 0px 10px;
+                padding-bottom: 10px;
+                border: none;
+                border-bottom: 1px solid wheat;
+                font-size: 37.5px;
+                letter-spacing: 0;
+            }
+    
+            .footer-logo-next {
+                text-align: center;
+                background-color: transparent;
+                padding: 0 10px;
+                padding-top: 10px;
+                font-size: 22px;
+                font-weight: 300;
+            }
+        }
+    
+        .ah-footer-main {
+            flex-basis: 33%;
+            width: 100%;
+            padding: 0 10px;
+            .ah-footer-main-container {
+                justify-content: start;
+                align-items: center;
+                margin-bottom: 0;
+                .ah-footer-main-container-title {   
+                    margin: 0;
+                    margin-top: 10px;
+                }
+                .ah-footer-main-container-link {    
+                    a {
+                        font-size: 13.5px;
+                        color: #333;
+                    }
+                    a:hover {
+                        color: black;
+                    }
+                }
+                .social-media {
+                    display: flex;
+                    width: 100%;
+                    padding: 5px 0;
+                    background-color: transparent;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                    i {
+                        font-size: 22.5px;
+                        margin: 0 5.5px;
+                    }
+                }
+            }
+        }
+    
+        .ah-footer-bottom {
+            flex-basis: 33%;
+            padding: 0px 10px;
+            text-align: center;
+    
+            p {
+                font-style: italic;
+                font-size: 16px;
+                color: wheat;
+            }
         }
     }
 }

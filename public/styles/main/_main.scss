@@ -59,7 +59,7 @@
       text-align: center;
       border-bottom: 1px solid white;
       .ah-main-input {
-
+        cursor: pointer;
         margin-right: 10px;
         // background-image: linear-gradient(
         //     to bottom right,
@@ -83,3 +83,44 @@
   }
 
 }
+
+
+// media queries for min-width: 740px;
+@media (min-width: 740px) {
+  .ah-main {
+    .ah-main-div {
+      .ah-h3 {
+        font-size: 55px;
+        letter-spacing: 5px;
+      }
+      .ah-h4 {
+        background-color: transparent;
+        font-size: 30px;
+        letter-spacing: 7px;
+      }
+      .ah-main-inner-div {
+        padding: 8px 10px;
+        position: relative;
+        transition: all 0.2s ease;  
+        .ah-main-input {
+          opacity: 0.8;
+          font-size: 22px;  
+          transition: all 0.2s ease;      
+          &:hover {
+            opacity: 1;
+          }
+        }
+        i {
+          display: inline-block;
+          color: white;   
+          position: relative;
+        }
+        &:hover {
+            transform: scale(1.15);
+        }
+      }
+    }
+  
+  }
+}
+

@@ -84,6 +84,7 @@
     }
 
     .ah-category-option {
+      cursor: pointer;
       align-self: center;
       width: max-content;
       flex-basis: 22.5%;
@@ -119,6 +120,7 @@
         transition: all 0.1s ease;
 
         input {
+          
           text-align: center;
           padding: 1rem;
           background-color: transparent;
@@ -136,58 +138,71 @@
         }
       }
     }
-
-    .smoothie {
-      // margin-left: 50px;
-
-      // background-image: linear-gradient(
-      //     to bottom right,
-      //     rgba(194, 253, 167, 0.8),
-      //     rgba(230, 230, 219, 0.6)
-      //   ),
-      //   url("../images/smoothie.png");
-
-        .ah-category-option-text {
-         
-        }
-    }
-
-    .slush {
-      // margin-right: 50px;
-
-      // background-image: linear-gradient(
-      //     to bottom right,
-      //     rgba(243, 166, 239, 0.8),
-      //     rgba(247, 213, 61, 0.6)
-      //   ),
-      //   url("../images/slush.png");
-        
-        .ah-category-option-text {
-         
-        }
-    }
-
-    .coffee {
-      // margin-left: 50px;
-      // background-image: linear-gradient(
-      //     to bottom right,
-      //     rgba(136, 66, 8, 0.8),
-      //     rgba(233, 233, 224, 0.6)
-      //   ),
-      //   url("../images/coffee.png");
-        .ah-category-option-text {
-       
-        }
-    }
-
-    .tea {
-      // margin-right: 50px;
-
-        .ah-category-option-text {
-         
-        }
-    }
   }
 }
 
-
+// media queries for min-width: 740px;
+@media (min-width: 740px) {
+  .ah-section {
+    margin: 40px auto;
+  }
+  
+  /*
+  ** Section-About Style
+  */
+  .ah-about {
+    height: 100vh;
+    .ah-about-div {
+      padding: 0 2.5%;
+      .ah-about-h3 {
+        font-size: 65px;
+      }
+      .ah-about-p {
+        width: 70%;
+        line-height: 2;
+        font-size: 22px;
+      }
+    }
+  }
+  .ah-category {
+    height: 100vh;
+    .ah-category-div {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: max-content;
+      .ah-category-h3 {
+        width: 100%;
+        height: max-content;
+        font-size: 65px;
+      }
+      .ah-category-option {
+        flex-basis: 45%;
+        margin: 50px auto;
+        height: 200px;
+        &:hover {
+          height: 200px;
+          transition: all 0.2s ease;
+          input {
+            font-weight: bold;
+            letter-spacing: 1.5px;
+          }
+        }
+        .ah-category-option-text {
+          input {
+            text-align: center;
+            font-size: 2.5vh;
+            transition: all 0.3s ease;
+          }
+        }
+        &:hover {
+          opacity: 1;
+          z-index: 1;
+          .ah-category-option-text {
+            font-size: auto;
+          }
+        }
+      }
+    }
+  }
+}

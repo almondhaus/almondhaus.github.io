@@ -129,6 +129,7 @@ u {
 
 .ah-header .ah-h1 {
   display: inline;
+  cursor: pointer;
   font-size: 20px;
   font-family: "Abel", sans-serif;
   -ms-flex-item-align: center;
@@ -138,6 +139,7 @@ u {
 }
 
 .ah-header i {
+  cursor: pointer;
   color: #1a1515;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -164,6 +166,21 @@ u {
   font-family: "Abel", sans-serif;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+}
+
+@media (min-width: 740px) {
+  .ah-header {
+    padding: 15px 2.5%;
+  }
+  .ah-header .ah-h1 {
+    font-size: 25px;
+    letter-spacing: 2.5px;
+  }
+  .ah-header .ah-mode {
+    font-size: 25px;
+    padding: 3.5px 7px;
+    border-radius: 0.5rem;
+  }
 }
 
 .ah-main {
@@ -225,6 +242,7 @@ u {
 }
 
 .ah-main .ah-main-div .ah-main-inner-div .ah-main-input {
+  cursor: pointer;
   margin-right: 10px;
   color: white;
   background-color: transparent;
@@ -239,6 +257,42 @@ u {
 .ah-main .ah-main-div .ah-main-inner-div i {
   display: inline-block;
   color: white;
+}
+
+@media (min-width: 740px) {
+  .ah-main .ah-main-div .ah-h3 {
+    font-size: 55px;
+    letter-spacing: 5px;
+  }
+  .ah-main .ah-main-div .ah-h4 {
+    background-color: transparent;
+    font-size: 30px;
+    letter-spacing: 7px;
+  }
+  .ah-main .ah-main-div .ah-main-inner-div {
+    padding: 8px 10px;
+    position: relative;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .ah-main .ah-main-div .ah-main-inner-div .ah-main-input {
+    opacity: 0.8;
+    font-size: 22px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .ah-main .ah-main-div .ah-main-inner-div .ah-main-input:hover {
+    opacity: 1;
+  }
+  .ah-main .ah-main-div .ah-main-inner-div i {
+    display: inline-block;
+    color: white;
+    position: relative;
+  }
+  .ah-main .ah-main-div .ah-main-inner-div:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
 }
 
 .ah-section {
@@ -322,6 +376,7 @@ u {
 }
 
 .ah-category .ah-category-div .ah-category-option {
+  cursor: pointer;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -374,6 +429,80 @@ u {
 
 .ah-category .ah-category-div .ah-category-option:hover .ah-category-option-text {
   font-size: 30px;
+}
+
+@media (min-width: 740px) {
+  .ah-section {
+    margin: 40px auto;
+  }
+  /*
+  ** Section-About Style
+  */
+  .ah-about {
+    height: 100vh;
+  }
+  .ah-about .ah-about-div {
+    padding: 0 2.5%;
+  }
+  .ah-about .ah-about-div .ah-about-h3 {
+    font-size: 65px;
+  }
+  .ah-about .ah-about-div .ah-about-p {
+    width: 70%;
+    line-height: 2;
+    font-size: 22px;
+  }
+  .ah-category {
+    height: 100vh;
+  }
+  .ah-category .ah-category-div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .ah-category .ah-category-div .ah-category-h3 {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    font-size: 65px;
+  }
+  .ah-category .ah-category-div .ah-category-option {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    margin: 50px auto;
+    height: 200px;
+  }
+  .ah-category .ah-category-div .ah-category-option:hover {
+    height: 200px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  .ah-category .ah-category-div .ah-category-option:hover input {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  .ah-category .ah-category-div .ah-category-option .ah-category-option-text input {
+    text-align: center;
+    font-size: 2.5vh;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .ah-category .ah-category-div .ah-category-option:hover {
+    opacity: 1;
+    z-index: 1;
+  }
+  .ah-category .ah-category-div .ah-category-option:hover .ah-category-option-text {
+    font-size: auto;
+  }
 }
 
 .ah-menu-main {
@@ -437,6 +566,40 @@ u {
 .ah-menu-main .ah-menu-main-div .item .item-description {
   font-size: 14px;
   color: #bc987f;
+}
+
+@media (min-width: 740px) {
+  .ah-menu-main .ah-menu-main-div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ah-menu-main .ah-menu-main-div .item {
+    -ms-flex-item-align: top;
+        -ms-grid-row-align: top;
+        align-self: top;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    padding: 10px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .ah-menu-main .ah-menu-main-div .item .item-title {
+    font-size: 20px;
+  }
+  .ah-menu-main .ah-menu-main-div .item .item-description {
+    font-size: 16.5px;
+  }
 }
 
 .ah-footer {
@@ -526,8 +689,12 @@ u {
 }
 
 .ah-footer .ah-footer-main .ah-footer-main-container .social-media i {
-  font-size: 22.5px;
-  color: #ededf1;
+  font-size: 20.5px;
+  color: rgba(58, 54, 42, 0.767);
+}
+
+.ah-footer .ah-footer-main .ah-footer-main-container .social-media i:hover {
+  color: #3a362a;
 }
 
 .ah-footer .ah-footer-bottom {
@@ -538,6 +705,110 @@ u {
   font-style: italic;
   font-size: 12px;
   color: wheat;
+}
+
+@media (min-width: 740px) {
+  .ah-footer {
+    padding: 30px 2.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ah-footer .ah-footer-top {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: top;
+        -ms-flex-align: top;
+            align-items: top;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .ah-footer .ah-footer-top .footer-logo {
+    padding: 0px 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid wheat;
+    font-size: 37.5px;
+    letter-spacing: 0;
+  }
+  .ah-footer .ah-footer-top .footer-logo-next {
+    text-align: center;
+    background-color: transparent;
+    padding: 0 10px;
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: 300;
+  }
+  .ah-footer .ah-footer-main {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .ah-footer .ah-footer-main .ah-footer-main-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0;
+  }
+  .ah-footer .ah-footer-main .ah-footer-main-container .ah-footer-main-container-title {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .ah-footer .ah-footer-main .ah-footer-main-container .ah-footer-main-container-link a {
+    font-size: 13.5px;
+    color: #333;
+  }
+  .ah-footer .ah-footer-main .ah-footer-main-container .ah-footer-main-container-link a:hover {
+    color: black;
+  }
+  .ah-footer .ah-footer-main .ah-footer-main-container .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 5px 0;
+    background-color: transparent;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  .ah-footer .ah-footer-main .ah-footer-main-container .social-media i {
+    font-size: 22.5px;
+    margin: 0 5.5px;
+  }
+  .ah-footer .ah-footer-bottom {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+    padding: 0px 10px;
+    text-align: center;
+  }
+  .ah-footer .ah-footer-bottom p {
+    font-style: italic;
+    font-size: 16px;
+    color: wheat;
+  }
 }
 
 .theme-main {

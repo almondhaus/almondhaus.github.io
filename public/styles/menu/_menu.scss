@@ -44,3 +44,35 @@
         }
     }
 }
+
+
+// media queries for min-width: 740px;
+@media (min-width: 740px) {
+    .ah-menu-main {
+        .ah-menu-main-title {
+        }
+        .ah-menu-main-div {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            .item {
+                align-self: top;
+                flex-basis: 40%;
+                padding: 10px;
+                margin: 0 20px;
+                margin-bottom: 20px;
+                .item-image {
+                }
+                .item-title {
+                    font-size: 20px;
+                }
+                .item-description {
+                    font-size: 16.5px;
+                }
+            }
+        }
+    }
+    
+}
