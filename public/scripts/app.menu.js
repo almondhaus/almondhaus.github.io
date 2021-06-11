@@ -13,7 +13,11 @@ function fetchData(which) {
 
         for(let key in content) {
            const li = document.createElement("li");
-           li.setAttribute("class", "item theme-main")
+           li.setAttribute("class", "item theme-main");
+           const img = document.createElement("img");
+           img.setAttribute("class", "item-image");
+           img.setAttribute("src", "../public/images/coffee.png");
+           img.setAttribute("alt", key);
            const h4 = document.createElement("h4");
            h4.setAttribute("class", "item-title");
            h4.innerHTML = key;
@@ -21,6 +25,7 @@ function fetchData(which) {
            p.setAttribute("class", "item-description")
            p.innerHTML = content[key].description;
 
+           li.append(img);
            li.append(h4);
            li.append(p);
            ul.append(li);
