@@ -17,6 +17,10 @@ body {
   background-color: white;
 }
 
+u {
+  text-decoration: underline;
+}
+
 @-webkit-keyframes main_header_Opacify {
   100% {
     opacity: 1;
@@ -355,6 +359,13 @@ body {
   transition: all 0.1s ease;
 }
 
+.ah-category .ah-category-div .ah-category-option .ah-category-option-text input {
+  text-align: center;
+  padding: 1rem;
+  background-color: transparent;
+  color: inherit;
+}
+
 .ah-category .ah-category-div .ah-category-option:hover {
   opacity: 1;
   height: 100%;
@@ -363,6 +374,69 @@ body {
 
 .ah-category .ah-category-div .ah-category-option:hover .ah-category-option-text {
   font-size: 30px;
+}
+
+.ah-menu-main {
+  display: block;
+  position: relative;
+  min-height: 100vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.ah-menu-main .ah-menu-main-title {
+  padding: 65px 2.5px;
+  text-align: center;
+  font-size: 30px;
+  background-color: transparent;
+}
+
+.ah-menu-main .ah-menu-main-div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ah-menu-main .ah-menu-main-div .item {
+  -ms-flex-item-align: top;
+      align-self: top;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 10px;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ah-menu-main .ah-menu-main-div .item .item-image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.ah-menu-main .ah-menu-main-div .item .item-title {
+  font-size: 16px;
+  color: #aa7d5e;
+}
+
+.ah-menu-main .ah-menu-main-div .item .item-description {
+  font-size: 14px;
+  color: #bc987f;
 }
 
 .ah-footer {
@@ -430,10 +504,13 @@ body {
   color: #493426;
 }
 
+.ah-footer .ah-footer-main .ah-footer-main-container .ah-footer-main-container-link {
+  color: black;
+}
+
 .ah-footer .ah-footer-main .ah-footer-main-container .ah-footer-main-container-link a {
   color: black;
   font-size: 14px;
-  text-decoration: underline;
 }
 
 .ah-footer .ah-footer-main .ah-footer-main-container .social-media {

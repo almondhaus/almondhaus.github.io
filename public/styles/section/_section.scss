@@ -117,6 +117,13 @@
 
         background-color: transparent;
         transition: all 0.1s ease;
+
+        input {
+          text-align: center;
+          padding: 1rem;
+          background-color: transparent;
+          color: inherit;
+        }
       }
 
       &:hover {

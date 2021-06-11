@@ -10,11 +10,17 @@ body {
   background-color: white;
 }
 
+u {
+  text-decoration: underline
+}
+
 @import "./animations/animations";
 @import "./header/header";
 @import "./main/main";
 @import "./section/section";
+@import "./menu/menu";
 @import "./footer/footer";
+
 
 .theme-main {
   color: $themeMain;
@@ -33,3 +39,4 @@ body {
   color: $themWhiteDark;
   background-color: $themWhiteDark;
 }
+

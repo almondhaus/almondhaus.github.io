@@ -1,0 +1,46 @@
+.ah-menu-main {
+    display: block;
+    position: relative;
+    min-height: 100vh;
+    height: max-content;
+
+    .ah-menu-main-title {
+        padding: 65px 2.5px;
+        text-align: center;
+        font-size: 30px;
+        background-color: transparent;
+    }
+
+    .ah-menu-main-div {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .item {
+            align-self: top;
+            flex-basis: 100%;
+            padding: 10px;
+            margin: 0 10px;
+            margin-bottom: 20px;
+            display: inline-flex;
+            flex-direction: column;
+
+            .item-image {
+                width:100%;
+                margin-bottom: 10px;
+            }
+
+            .item-title {
+                font-size: 16px;
+                color: $fontColor;
+            }
+
+            .item-description {
+                font-size: 14px;
+                color: lighten($color: $fontColor, $amount: 10);
+            }
+        }
+    }
+}

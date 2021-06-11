@@ -1,0 +1,41 @@
+{
+    "Smoothie" : {
+        "Almond Milk Tea Smoothie" : {
+            "price" : 4.65,
+            "description" : "made with fresh haus milk tea blended"
+        },
+        "Avocado Smoothie" : {
+            "price" : 5.49,
+            "description" : "fresh avocado blened with milk"
+        },
+        "Peach Smoothie" : {
+            "price" : 4.65,
+            "description" : "blended with fresh whtite peach"
+        }
+    },
+    "Tea" : {
+        "Almond Milk Tea" : {
+            "price" : 3.75,
+            "description" : "fresh haus milk tea, daily choice"
+        },
+        "Taro Milk Tea" : {
+            "price" : 3.75,
+            "description" : "fresh taro milk tea, daily choice"
+        },
+        "Thai Milk Tea" : {
+            "price" : 3.75,
+            "description" : "fresh thai milk tea, daily choice"
+        }
+    },
+    "Coffee" : {
+        "Almond Haus Iced Coffee" : {
+            "price" : 4.25,
+            "description" : "expresso based milk tea mixtrue, daily choice"
+        },
+        "Sea Salt Iced Coffee" : {
+            "price" : 4.15,
+            "description" : "iced coffee mixed with haus espresso under home-made sea salt foam"
+        }
+    }
+}
+
