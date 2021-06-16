@@ -1,38 +1,62 @@
 {
     "Smoothie" : {
         "Almond Milk Tea Smoothie" : {
+            "url" : "https://s3-media0.fl.yelpcdn.com/bphoto/8JDujZXokfinDvyHIE4diw/o.jpg",
             "price" : 4.65,
             "description" : "made with fresh haus milk tea blended"
         },
         "Avocado Smoothie" : {
+            "url" : "https://s3-media0.fl.yelpcdn.com/bphoto/FrfPOiqNaAfvlq9N7A_Byw/o.jpg",
             "price" : 5.49,
             "description" : "fresh avocado blened with milk"
         },
         "Peach Smoothie" : {
+            "url" : "https://s3-media0.fl.yelpcdn.com/bphoto/fPTA984nc5UhMLcSkDW8Vw/o.jpg",
             "price" : 4.65,
             "description" : "blended with fresh whtite peach"
         }
     },
     "Tea" : {
         "Almond Milk Tea" : {
+            "url" : "https://s3-media0.fl.yelpcdn.com/bphoto/VYKJsigs-w1rYXeHeQUyNA/o.jpg",
             "price" : 3.75,
             "description" : "fresh haus milk tea, daily choice"
         },
-        "Taro Milk Tea" : {
+        "Starberry Basil Iced Tea" : {
+            "url" : "https://s3-media0.fl.yelpcdn.com/bphoto/MuE0H7_ZasowKR85hlZljA/o.jpg",
             "price" : 3.75,
             "description" : "fresh taro milk tea, daily choice"
         },
-        "Thai Milk Tea" : {
+        "Mixed Fruit Tea" : {
+            "url" : "https://s3-media0.fl.yelpcdn.com/bphoto/vD-uCDKNcW_rYhsk1x1Fzw/o.jpg",
             "price" : 3.75,
             "description" : "fresh thai milk tea, daily choice"
         }
     },
     "Coffee" : {
         "Almond Haus Iced Coffee" : {
+            "url" : "https://s3-media0.fl.yelpcdn.com/bphoto/4znGi3-yPT_5hB2oSsGJXQ/o.jpg",
             "price" : 4.25,
             "description" : "expresso based milk tea mixtrue, daily choice"
         },
         "Sea Salt Iced Coffee" : {
+            "url" : "https://s3-media0.fl.yelpcdn.com/bphoto/OjOJOdPgmySPMUgw4oJvXA/o.jpg",
+            "price" : 4.15,
+            "description" : "iced coffee mixed with haus espresso under home-made sea salt foam"
+        }
+    },
+    "Slush" : {
+        "Cloudy Strawberry Slush" : {
+            "url" : "https://s3-media0.fl.yelpcdn.com/bphoto/LS_4Oheoe1OMBXVIoWphFg/o.jpg",
+            "price" : 4.15
+        },
+        "Mango Cream Slush" : {
+            "url" : "https://s3-media0.fl.yelpcdn.com/bphoto/fPTA984nc5UhMLcSkDW8Vw/o.jpg",
+            "price" : 4.25,
+            "description" : "expresso based milk tea mixtrue, daily choice"
+        },
+        "Thai Tea Slush" : {
+            "url" : "https://s3-media0.fl.yelpcdn.com/bphoto/sb-auZTFjGNZUQQoJTUelQ/o.jpg",
             "price" : 4.15,
             "description" : "iced coffee mixed with haus espresso under home-made sea salt foam"
         }

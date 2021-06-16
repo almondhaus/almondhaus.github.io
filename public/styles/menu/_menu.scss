@@ -1,78 +1,39 @@
-.ah-menu-main {
-    display: block;
-    position: relative;
-    min-height: 100vh;
-    height: max-content;
-
-    .ah-menu-main-title {
-        padding: 65px 2.5px;
-        text-align: center;
-        font-size: 30px;
-        background-color: transparent;
-    }
-
-    .ah-menu-main-div {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-
-        .item {
-            align-self: top;
-            flex-basis: 100%;
-            padding: 10px;
-            margin: 0 10px;
-            margin-bottom: 20px;
-            display: inline-flex;
-            flex-direction: column;
-
-            .item-image {
-                width:100%;
-                margin-bottom: 10px;
-            }
-
-            .item-title {
-                font-size: 16px;
-                color: $fontColor;
-            }
-
-            .item-description {
-                font-size: 14px;
-                color: lighten($color: $fontColor, $amount: 10);
-            }
-        }
-    }
+.ah-header {
+    background-color:white;
 }
 
+.main-menu-item {
+width: 100%;
+height: max-content;
+position: relative;
 
-// media queries for min-width: 740px;
-@media (min-width: 740px) {
-    .ah-menu-main {
-        .ah-menu-main-title {
-        }
-        .ah-menu-main-div {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: center;
-            .item {
-                align-self: top;
-                flex-basis: 40%;
-                padding: 10px;
-                margin: 0 20px;
-                margin-bottom: 20px;
-                .item-image {
+    .item-wrap {
+        background-color: transparent;
+        padding: 60px 2.5%;
+        height: max-content;
+        ul {
+            width: 95%;
+            margin: 0 auto;
+
+            li {    
+                text-align: center;
+                margin-top: 30px;
+                img {
+                    width: 100%;
+                    margin-bottom: 5px;
                 }
-                .item-title {
-                    font-size: 20px;
+
+                h3 {
+                    
+                    margin-bottom: 5px;
+                    color: #555;
                 }
-                .item-description {
-                    font-size: 16.5px;
+
+                p {
+                    color: #777;
+                    padding-bottom: 5px;
                 }
             }
         }
     }
-    
 }
